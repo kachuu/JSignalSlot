@@ -1,16 +1,16 @@
-# SignalSlot  
+# JSignalSlot  
   Implement a signal & slot mechanism similar to Qt in Java.  
   
 ### How Signals and Slots Work  
 The signal corresponds to multiple slots, with each slot being a reference to a receiver. When the signal is emitted, it will invoke each slot associated with this signal, and the invocation order of the slots depends on their position in the slot list. The later a slot is added, the later it will be called.  
-![image](https://github.com/kachuu/SignalSlot/blob/main/SignalSlot1.jpg)  
+![image](https://github.com/kachuu/JSignalSlot/blob/main/SignalSlot1.jpg)  
   
 ### You can connect any number of signals to a single slot, and signals can be connected to any number of slots  
-![image](https://github.com/kachuu/SignalSlot/blob/main/abstract-connections.png)  
+![image](https://github.com/kachuu/JSignalSlot/blob/main/abstract-connections.png)  
   
 ### Redirecting a signal to another slot  
 I've considered a mechanism similar to Qt's where one signal directly connects to another signal (whenever one signal is emitted, it immediately emits a second signal). However, I feel that such a mechanism isn't extremely important. It simply saves writing an extra function (possibly saving around 3 lines of code), and it's not very friendly for debugging since it's inconvenient to set breakpoints or output debug logs.  
-![image](https://github.com/kachuu/SignalSlot/blob/main/SignalSlot.jpg)  
+![image](https://github.com/kachuu/JSignalSlot/blob/main/SignalSlot.jpg)  
   
 ## Example  
 ### Connect signals to slots  
