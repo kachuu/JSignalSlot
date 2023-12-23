@@ -1,4 +1,4 @@
-# JSignalSlot  
+# SignalSlot Java Framework  
   Implement a signal & slot mechanism similar to Qt in Java.  
   
 ### How Signals and Slots Work  
